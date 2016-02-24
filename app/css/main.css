@@ -1,0 +1,16 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+#options {
+  width: 90%;
+  height: 8em;
+  margin: auto;
+  background-color: #CDCDCD;
+  text-align: center;
+  border-radius: 1.5em;
+}
+
+#options h2 {
+  font-size: 30px;
+}

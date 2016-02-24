@@ -1,0 +1,12 @@
+{
+  "name": "sketchpad",
+  "version": "0.0.0",
+  "description": "Throwback sketchpad clone in Reactjs",
+  "main": "index.jsx",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["sketchpad"],
+  "author": "Cedric Charly <cedric.charly@gmail.com>",
+  "license": "MIT"
+}

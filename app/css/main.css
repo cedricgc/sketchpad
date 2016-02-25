@@ -6,6 +6,7 @@ body {
   width: 90%;
   height: 8em;
   margin: auto;
+  margin-bottom: 1em;
   background-color: #CDCDCD;
   text-align: center;
   border-radius: 1.5em;
@@ -13,4 +14,16 @@ body {
 
 #options h2 {
   font-size: 30px;
+}
+
+.sketchpad {
+  width: 1000px;
+  margin: auto;
+  overflow: auto;
+}
+
+.square {
+  float: left;
+  background-color: black;
+  display: inline-block;
 }

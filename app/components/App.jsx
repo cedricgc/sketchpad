@@ -6,7 +6,7 @@ export default () => {
   return (
     <div>
       <Options />
-      <Sketchpad />
+      <Sketchpad boxesPerSide={25} />
     </div>
   );
 }

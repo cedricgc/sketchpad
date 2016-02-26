@@ -14,7 +14,6 @@
   "author": "Cedric Charly <cedric.charly@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "json-loader": "^0.5.4",
     "react": "^0.14.7",
     "react-dom": "^0.14.7"
   },
@@ -25,8 +24,8 @@
     "babel-preset-react": "^6.5.0",
     "babel-preset-react-hmre": "^1.1.0",
     "css-loader": "^0.23.1",
-    "npm-install-webpack-plugin": "^2.0.2",
     "style-loader": "^0.13.0",
+    "json-loader": "^0.5.4",
     "webpack": "^1.12.14",
     "webpack-dev-server": "^1.14.1",
     "webpack-merge": "^0.7.3"

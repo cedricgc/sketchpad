@@ -25,6 +25,11 @@ const common = {
   module: {
     loaders: [
       {
+        test: /\.json$/,
+        loaders: ['json'],
+        include: PATHS.app
+      },
+      {
         test: /\.css$/,
         loaders: ['style', 'css'],
         include: PATHS.app

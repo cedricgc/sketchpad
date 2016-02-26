@@ -14,6 +14,7 @@
   "author": "Cedric Charly <cedric.charly@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "json-loader": "^0.5.4",
     "react": "^0.14.7",
     "react-dom": "^0.14.7"
   },

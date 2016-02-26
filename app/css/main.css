@@ -17,13 +17,11 @@ body {
 }
 
 .sketchpad {
-  width: 1000px;
   margin: auto;
   overflow: auto;
 }
 
 .square {
   float: left;
-  background-color: black;
   display: inline-block;
 }

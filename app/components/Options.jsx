@@ -1,7 +1,6 @@
 import React from 'react'
 
-export default class Options extends React.Component {
-  render() {
+export default () => {
     return (
       <div id="options">
         <h2>Sketchpad!</h2>
@@ -16,6 +15,5 @@ export default class Options extends React.Component {
           <button type="button" id="random">Random Colors</button>
       </form>
       </div>
-    );
-  }
+    )
 }

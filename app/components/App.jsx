@@ -1,8 +1,8 @@
-import settings from '../settings.json';
+import settings from '../settings.json'
 
-import React from 'react';
-import Options from './Options';
-import Sketchpad from './Sketchpad';
+import React from 'react'
+import Options from './Options'
+import Sketchpad from './Sketchpad'
 
 export default () => {
   return (
@@ -10,5 +10,5 @@ export default () => {
       <Options />
       <Sketchpad sketchpadSize={settings.sketchpadSize} boxesPerSide={settings.defaultSquares} />
     </div>
-  );
+  )
 }

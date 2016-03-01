@@ -1,14 +1,14 @@
-import settings from '../settings.json'
-
 import React from 'react'
 import Options from './Options'
 import Sketchpad from './Sketchpad'
 
 export default ({store}) => {
+  const state = store.getState()
+
   return (
     <div>
       <Options store={store} />
-      <Sketchpad sketchpadSize={settings.sketchpadSize} boxesPerSide={settings.defaultSquares} />
+      <Sketchpad sketchpadSize={state.sketchpadWidth} boxesPerSide={state.squares} />
     </div>
   )
 }

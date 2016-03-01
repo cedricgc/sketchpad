@@ -2,11 +2,17 @@ import './css/main.css'
 
 import React from 'react';
 import ReactDOM from 'react-dom'
-import App from "./components/App"
-
 import { createStore } from 'redux'
+import App from "./components/App"
 import sketchpadApp from './reducers'
 
 let store = createStore(sketchpadApp)
 
-ReactDOM.render(<App />, document.getElementById('app'))
+let unsubscribe = store.subscribe(() =>
+  console.log(store.getState())
+)
+
+ReactDOM.render(
+  <App store={store} />,
+  document.getElementById('app')
+)

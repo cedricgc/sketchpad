@@ -4,10 +4,10 @@ import React from 'react'
 import Options from './Options'
 import Sketchpad from './Sketchpad'
 
-export default () => {
+export default ({store}) => {
   return (
     <div>
-      <Options />
+      <Options store={store} />
       <Sketchpad sketchpadSize={settings.sketchpadSize} boxesPerSide={settings.defaultSquares} />
     </div>
   )

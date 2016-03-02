@@ -1,22 +1,15 @@
 import React from 'react'
-import Square from './Square'
+import Squares from '../containers/Squares'
 
-export default ({sketchpadSize, boxesPerSide, handlers}) => {
-  const squareSize = sketchpadSize / boxesPerSide
+const Sketchpad = ({sketchpadWidth, boxesPerSide, handlers}) => {
+  const squareLength = sketchpadWidth / boxesPerSide
   const boxes = boxesPerSide * boxesPerSide
 
   return (
-    <div className="sketchpad" style={{width: sketchpadSize}}>
-      {generateSquares(boxes, squareSize, handlers)}
+    <div className="sketchpad" style={{width: sketchpadWidth}}>
+      <Squares count={boxes} sideLength={squareLength} handlers={handlers} />
     </div>
   )
 }
 
-function generateSquares(count, size, handlers) {
-  let squares = []
-  for(let i = 0; i < count; i++) {
-    squares.push(<Square key={i} size={size} {...handlers} />)
-  }
-  return squares
-}
-
+export default Sketchpad

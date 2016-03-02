@@ -2,13 +2,15 @@ import React from 'react'
 import Options from './Options'
 import Sketchpad from './Sketchpad'
 
-export default ({store}) => {
+const App = ({store}) => {
   const state = store.getState()
 
   return (
     <div>
       <Options store={store} />
-      <Sketchpad sketchpadSize={state.sketchpadWidth} boxesPerSide={state.squares} />
+      <Sketchpad sketchpadWidth={state.sketchpadWidth} boxesPerSide={state.squares} />
     </div>
   )
 }
+
+export default App

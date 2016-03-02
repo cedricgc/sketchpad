@@ -2,10 +2,10 @@ import settings from '../settings.json'
 
 import React from 'react'
 
-export default ({size}) => {
+const Square = ({sideLength}) => {
   const styles = {
-    width: size,
-    height: size,
+    width: sideLength,
+    height: sideLength,
     backgroundColor: settings.defaultColor
   }
 
@@ -14,3 +14,5 @@ export default ({size}) => {
     </div>
   )
 }
+
+export default Square

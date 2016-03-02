@@ -1,7 +1,7 @@
 import React from 'react'
 import { showGrid, setDimensions, setEffect, Effects } from '../actions'
 
-export default ({store}) => {
+const Options =  ({store}) => {
     return (
       <div id="options">
         <h2>Sketchpad!</h2>
@@ -23,3 +23,5 @@ export default ({store}) => {
       </div>
     )
 }
+
+export default Options

@@ -2,16 +2,9 @@ import settings from '../settings.json'
 
 import React from 'react'
 
-const Square = ({sideLength}) => {
-  const styles = {
-    width: sideLength,
-    height: sideLength,
-    backgroundColor: settings.defaultColor
-  }
-
+const Square = ({styles, handlers}) => {
   return (
-    <div className="square" style={styles}>
-    </div>
+    <div className="square" style={styles} {...handlers}> </div>
   )
 }
 
